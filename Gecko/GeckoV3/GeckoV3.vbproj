@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1471CFB6-CC13-472B-B8F8-326ED4070DEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GeckoV3.My.MyApplication</StartupObject>
+    <RootNamespace>GeckoV3</RootNamespace>
+    <AssemblyName>GeckoV3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GeckoV3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GeckoV3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\..\..\..\Desktop\WindowsApplicationDay101\WindowsApplication1\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Core">
+      <HintPath>..\..\..\Visual Studio 2010\Projects\GeckoWorkingV22\GeckoWorkingV22\bin\Debug\Geckofx-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Winforms">
+      <HintPath>..\..\..\Visual Studio 2010\Projects\GeckoWorkingV22\GeckoWorkingV22\bin\Debug\Geckofx-Winforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib">
+      <HintPath>..\..\..\..\Desktop\WindowsApplicationDay101\WindowsApplication1\bin\Debug\Interop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Desktop\WindowsApplicationDay101\WindowsApplication1\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Diens.Designer.vb">
+      <DependentUpon>Diens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fach.Designer.vb">
+      <DependentUpon>Fach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HFUKioskSytem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HFUKioskSytem.Designer.vb">
+      <DependentUpon>HFUKioskSytem.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyboard.Designer.vb">
+      <DependentUpon>keyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="keyboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="objects.vb" />
+    <Compile Include="Signaturen.Designer.vb">
+      <DependentUpon>Signaturen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signaturen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Diens.resx">
+      <DependentUpon>Diens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fach.resx">
+      <DependentUpon>Fach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HFUKioskSytem.resx">
+      <DependentUpon>HFUKioskSytem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keyboard.resx">
+      <DependentUpon>keyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signaturen.resx">
+      <DependentUpon>Signaturen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="fonts\CorporateA-LightItalic%281%29.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="fonts\UniversLTW02-47LightCn.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="fonts\UniversLTW02-57Condensed.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="fonts\UniversLTW02-67BoldCn.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="xulrunner\crashreporter.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\dependentlibs.list">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\dictionaries\en-US.aff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\dictionaries\en-US.dic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\freebl3.chk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\js-gdb.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\LICENSE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\nssdbm3.chk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\omni.ja">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\platform.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\precomplete">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\README.xulrunner">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xulrunner\softokn3.chk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\a.gif" />
+    <None Include="Resources\A1.png" />
+    <None Include="Resources\A1Click.png" />
+    <None Include="Resources\A2.png" />
+    <None Include="Resources\A2Click.png" />
+    <None Include="Resources\A3.png" />
+    <None Include="Resources\A3Click.png" />
+    <None Include="Resources\A4.png" />
+    <None Include="Resources\A4Click.png" />
+    <None Include="Resources\A5.png" />
+    <None Include="Resources\A5Click.png" />
+    <None Include="Resources\A6.png" />
+    <None Include="Resources\A6Click.png" />
+    <None Include="Resources\A7.png" />
+    <None Include="Resources\A7Click.png" />
+    <None Include="Resources\A8.png" />
+    <None Include="Resources\A8Click.png" />
+    <None Include="Resources\A9.png" />
+    <None Include="Resources\A9Click.png" />
+    <None Include="Resources\A10.png" />
+    <None Include="Resources\A10Click.png" />
+    <None Include="Resources\A11.png" />
+    <None Include="Resources\A11Click.png" />
+    <None Include="Resources\A12.png" />
+    <None Include="Resources\A12Click.png" />
+    <None Include="Resources\a13.png" />
+    <None Include="Resources\A14.png" />
+    <None Include="Resources\A14Click.png" />
+    <None Include="Resources\A15.png" />
+    <None Include="Resources\A15Click.png" />
+    <None Include="Resources\A16.png" />
+    <None Include="Resources\A16Click.png" />
+    <None Include="Resources\A17.png" />
+    <None Include="Resources\A17Click.png" />
+    <None Include="Resources\A18.png" />
+    <None Include="Resources\A18Click.png" />
+    <None Include="Resources\A19.png" />
+    <None Include="Resources\A19Click.png" />
+    <None Include="Resources\A20.png" />
+    <None Include="Resources\A20Click.png" />
+    <None Include="Resources\A21.png" />
+    <None Include="Resources\A21Click.png" />
+    <None Include="Resources\A22.png" />
+    <None Include="Resources\A22Click.png" />
+    <None Include="Resources\A23.png" />
+    <None Include="Resources\A23Click.png" />
+    <None Include="Resources\A24.png" />
+    <None Include="Resources\A24Click.png" />
+    <None Include="Resources\A25.png" />
+    <None Include="Resources\A25Click.png" />
+    <None Include="Resources\A26.png" />
+    <None Include="Resources\A26click.png" />
+    <None Include="Resources\A27.png" />
+    <None Include="Resources\A27Click.png" />
+    <None Include="Resources\A28.png" />
+    <None Include="Resources\A28Click.png" />
+    <None Include="Resources\A29.png" />
+    <None Include="Resources\A29Click.png" />
+    <None Include="Resources\A30.png" />
+    <None Include="Resources\A30Click.png" />
+    <None Include="Resources\A31.png" />
+    <None Include="Resources\A31Click.png" />
+    <None Include="Resources\A32.png" />
+    <None Include="Resources\A32Click.png" />
+    <None Include="Resources\A33.png" />
+    <None Include="Resources\A33Click.png" />
+    <None Include="Resources\A34.png" />
+    <None Include="Resources\A34Click.png" />
+    <None Include="Resources\A35.png" />
+    <None Include="Resources\A35Click.png" />
+    <None Include="Resources\A36.png" />
+    <None Include="Resources\A36Click.png" />
+    <None Include="Resources\A37.png" />
+    <None Include="Resources\A37Click.png" />
+    <None Include="Resources\A38.png" />
+    <None Include="Resources\A38Click.png" />
+    <None Include="Resources\A39.png" />
+    <None Include="Resources\A40.png" />
+    <None Include="Resources\A40Click.png" />
+    <None Include="Resources\A41.png" />
+    <None Include="Resources\A41Click.png" />
+    <None Include="Resources\A42.png" />
+    <None Include="Resources\A42Click.png" />
+    <None Include="Resources\A43.png" />
+    <None Include="Resources\A43Click.png" />
+    <None Include="Resources\A44.png" />
+    <None Include="Resources\A44Click.png" />
+    <None Include="Resources\A45.png" />
+    <None Include="Resources\A45Click.png" />
+    <None Include="Resources\A46.png" />
+    <None Include="Resources\A46Click.png" />
+    <None Include="Resources\A47.png" />
+    <None Include="Resources\A47Click.png" />
+    <None Include="Resources\A48.png" />
+    <None Include="Resources\A48Click.png" />
+    <None Include="Resources\A49.png" />
+    <None Include="Resources\A49Click.png" />
+    <None Include="Resources\A50.png" />
+    <None Include="Resources\A50Click.png" />
+    <None Include="Resources\A51.png" />
+    <None Include="Resources\A52.png" />
+    <None Include="Resources\A53.png" />
+    <None Include="Resources\A53Click.png" />
+    <None Include="Resources\A54.png" />
+    <None Include="Resources\A54Click.png" />
+    <None Include="Resources\A55.png" />
+    <None Include="Resources\A56.png" />
+    <None Include="Resources\A56click.png" />
+    <None Include="Resources\A57.png" />
+    <None Include="Resources\A57click.png" />
+    <None Include="Resources\ab_ac_ad_ae.gif" />
+    <None Include="Resources\ae.gif" />
+    <None Include="Resources\af.gif" />
+    <None Include="Resources\aFile.gif" />
+    <None Include="Resources\ag.gif" />
+    <None Include="Resources\ah.gif" />
+    <None Include="Resources\ak.gif" />
+    <None Include="Resources\al.gif" />
+    <None Include="Resources\ap.gif" />
+    <None Include="Resources\ar.gif" />
+    <None Include="Resources\as.gif" />
+    <None Include="Resources\asfile.gif" />
+    <None Include="Resources\b.gif" />
+    <None Include="Resources\B14.png" />
+    <None Include="Resources\B14Click.png" />
+    <None Include="Resources\B15.png" />
+    <None Include="Resources\B15Click.png" />
+    <None Include="Resources\B16.png" />
+    <None Include="Resources\B16Click.png" />
+    <None Include="Resources\B17.png" />
+    <None Include="Resources\B17Click.png" />
+    <None Include="Resources\B18.png" />
+    <None Include="Resources\B18Click.png" />
+    <None Include="Resources\B19.png" />
+    <None Include="Resources\B19Click.png" />
+    <None Include="Resources\B20.png" />
+    <None Include="Resources\B20Click.png" />
+    <None Include="Resources\B21.png" />
+    <None Include="Resources\B21Click.png" />
+    <None Include="Resources\B22.png" />
+    <None Include="Resources\B22Click.png" />
+    <None Include="Resources\B23.png" />
+    <None Include="Resources\B23Click.png" />
+    <None Include="Resources\B24.png" />
+    <None Include="Resources\B24Click.png" />
+    <None Include="Resources\B25.png" />
+    <None Include="Resources\B25Click.png" />
+    <None Include="Resources\B27.png" />
+    <None Include="Resources\B27Click.png" />
+    <None Include="Resources\B28.png" />
+    <None Include="Resources\B28Click.png" />
+    <None Include="Resources\B29.png" />
+    <None Include="Resources\B29Click.png" />
+    <None Include="Resources\B30.png" />
+    <None Include="Resources\B30Click.png" />
+    <None Include="Resources\B31.png" />
+    <None Include="Resources\B31Click.png" />
+    <None Include="Resources\B32.png" />
+    <None Include="Resources\B32Click.png" />
+    <None Include="Resources\B33.png" />
+    <None Include="Resources\B33Click.png" />
+    <None Include="Resources\B34.png" />
+    <None Include="Resources\B34Click.png" />
+    <None Include="Resources\B35.png" />
+    <None Include="Resources\B35Click.png" />
+    <None Include="Resources\B36.png" />
+    <None Include="Resources\B36Click.png" />
+    <None Include="Resources\B37.png" />
+    <None Include="Resources\B37Click.png" />
+    <None Include="Resources\B39.png" />
+    <None Include="Resources\B40.png" />
+    <None Include="Resources\B40Click.png" />
+    <None Include="Resources\B41.png" />
+    <None Include="Resources\B41Click.png" />
+    <None Include="Resources\B42.png" />
+    <None Include="Resources\B42Click.png" />
+    <None Include="Resources\B43.png" />
+    <None Include="Resources\B43Click.png" />
+    <None Include="Resources\B44.png" />
+    <None Include="Resources\B44Click.png" />
+    <None Include="Resources\B45.png" />
+    <None Include="Resources\B45Click.png" />
+    <None Include="Resources\B46.png" />
+    <None Include="Resources\B46Click.png" />
+    <None Include="Resources\B51.png" />
+    <None Include="Resources\ba.gif" />
+    <None Include="Resources\be_bl.gif" />
+    <None Include="Resources\bein.gif" />
+    <None Include="Resources\bm_bn.gif" />
+    <None Include="Resources\bo.gif" />
+    <None Include="Resources\bp_br.gif" />
+    <None Include="Resources\buttonNormal.png" />
+    <None Include="Resources\c.gif" />
+    <None Include="Resources\C14.png" />
+    <None Include="Resources\C14Click.png" />
+    <None Include="Resources\C15.png" />
+    <None Include="Resources\C15Click.png" />
+    <None Include="Resources\C16.png" />
+    <None Include="Resources\C16Click.png" />
+    <None Include="Resources\C17.png" />
+    <None Include="Resources\C17Click.png" />
+    <None Include="Resources\C18.png" />
+    <None Include="Resources\C18Click.png" />
+    <None Include="Resources\C19.png" />
+    <None Include="Resources\C19Click.png" />
+    <None Include="Resources\C20.png" />
+    <None Include="Resources\C20Click.png" />
+    <None Include="Resources\C21.png" />
+    <None Include="Resources\C21Click.png" />
+    <None Include="Resources\C22.png" />
+    <None Include="Resources\C22Click.png" />
+    <None Include="Resources\C23.png" />
+    <None Include="Resources\C23Click.png" />
+    <None Include="Resources\C24.png" />
+    <None Include="Resources\C24Click.png" />
+    <None Include="Resources\C25.png" />
+    <None Include="Resources\C25Click.png" />
+    <None Include="Resources\C27.png" />
+    <None Include="Resources\C27Click.png" />
+    <None Include="Resources\C28.png" />
+    <None Include="Resources\C28Click.png" />
+    <None Include="Resources\C29.png" />
+    <None Include="Resources\C29Click.png" />
+    <None Include="Resources\C30.png" />
+    <None Include="Resources\C30Click.png" />
+    <None Include="Resources\C31.png" />
+    <None Include="Resources\C31Click.png" />
+    <None Include="Resources\C32.png" />
+    <None Include="Resources\C32Click.png" />
+    <None Include="Resources\C33.png" />
+    <None Include="Resources\C33Click.png" />
+    <None Include="Resources\C34.png" />
+    <None Include="Resources\C34Click.png" />
+    <None Include="Resources\C35.png" />
+    <None Include="Resources\C35Click.png" />
+    <None Include="Resources\C36.png" />
+    <None Include="Resources\C36Click.png" />
+    <None Include="Resources\C37.png" />
+    <None Include="Resources\C37Click.png" />
+    <None Include="Resources\C40.png" />
+    <None Include="Resources\C40Click.png" />
+    <None Include="Resources\C41.png" />
+    <None Include="Resources\C41Click.png" />
+    <None Include="Resources\C42.png" />
+    <None Include="Resources\C42Click.png" />
+    <None Include="Resources\C43.png" />
+    <None Include="Resources\C43Click.png" />
+    <None Include="Resources\C44.png" />
+    <None Include="Resources\C44Click.png" />
+    <None Include="Resources\C45.png" />
+    <None Include="Resources\C45Click.png" />
+    <None Include="Resources\C46.png" />
+    <None Include="Resources\C46Click.png" />
+    <None Include="Resources\C47.png" />
+    <None Include="Resources\C47Click.png" />
+    <None Include="Resources\C48.png" />
+    <None Include="Resources\C48Click.png" />
+    <None Include="Resources\C49.png" />
+    <None Include="Resources\C49Click.png" />
+    <None Include="Resources\C50.png" />
+    <None Include="Resources\C50Click.png" />
+    <None Include="Resources\C52.png" />
+    <None Include="Resources\C54.png" />
+    <None Include="Resources\C54Click.png" />
+    <None Include="Resources\C55.png" />
+    <None Include="Resources\ca_cb_cl_cn_co_cv_cy_da_db_de_df_dh_dl_dm.gif" />
+    <None Include="Resources\d.gif" />
+    <None Include="Resources\defaultposter.png" />
+    <None Include="Resources\Dienstleistungen.png" />
+    <None Include="Resources\DienstleistungenActive.png" />
+    <None Include="Resources\DienstleistungenActiveClick.png" />
+    <None Include="Resources\DienstleistungenClick.png" />
+    <None Include="Resources\dp_dx_ea_eb.gif" />
+    <None Include="Resources\e.gif" />
+    <None Include="Resources\eap.gif" />
+    <None Include="Resources\ef.gif" />
+    <None Include="Resources\eJournals.gif" />
+    <None Include="Resources\ek.gif" />
+    <None Include="Resources\el_em.gif" />
+    <None Include="Resources\en.gif" />
+    <None Include="Resources\enbue.gif" />
+    <None Include="Resources\eo_er_es_et.gif" />
+    <None Include="Resources\error_button.png" />
+    <None Include="Resources\error_panel.png" />
+    <None Include="Resources\errorMsg.png" />
+    <None Include="Resources\eu.gif" />
+    <None Include="Resources\f.gif" />
+    <None Include="Resources\f_d_beratung.png" />
+    <None Include="Resources\f_d_beratungSmall.png" />
+    <None Include="Resources\f_d_datenbankin.png" />
+    <None Include="Resources\f_d_datenbankinSmall.png" />
+    <None Include="Resources\f_d_ebooks.png" />
+    <None Include="Resources\f_d_ebooksSmall.png" />
+    <None Include="Resources\f_d_einzelarbeitsplatze.png" />
+    <None Include="Resources\f_d_einzelarbeitsplatzeSmall.png" />
+    <None Include="Resources\f_d_ejournal.png" />
+    <None Include="Resources\f_d_ejournalSmall.png" />
+    <None Include="Resources\f_d_entleihbare.png" />
+    <None Include="Resources\f_d_entleihbareSmall.png" />
+    <None Include="Resources\f_d_filme.png" />
+    <None Include="Resources\f_d_filmeSmall.png" />
+    <None Include="Resources\f_d_garderobe.png" />
+    <None Include="Resources\f_d_garderobeSmall.png" />
+    <None Include="Resources\f_d_gruppenarbeitsplatze.png" />
+    <None Include="Resources\f_d_gruppenarbeitsplatzeSmall.png" />
+    <None Include="Resources\f_d_neumed.png" />
+    <None Include="Resources\f_d_neumedSmall.png" />
+    <None Include="Resources\f_d_ohrst.png" />
+    <None Include="Resources\f_d_ohrstSmall.png" />
+    <None Include="Resources\f_d_opac_terminal.png" />
+    <None Include="Resources\f_d_opac_terminalSmall.png" />
+    <None Include="Resources\f_d_prasenzbucher.png" />
+    <None Include="Resources\f_d_prasenzbucherSmall.png" />
+    <None Include="Resources\f_d_scanner.png" />
+    <None Include="Resources\f_d_scannerSmall.png" />
+    <None Include="Resources\f_d_schliebtacher.png" />
+    <None Include="Resources\f_d_schliebtacherSmall.png" />
+    <None Include="Resources\f_d_schneid.png" />
+    <None Include="Resources\f_d_schneidSmall.png" />
+    <None Include="Resources\f_d_selbstverbucher.png" />
+    <None Include="Resources\f_d_selbstverbucherSmall.png" />
+    <None Include="Resources\f_d_tagzeionl.png" />
+    <None Include="Resources\f_d_tagzeionlSmall.png" />
+    <None Include="Resources\f_d_terminal.png" />
+    <None Include="Resources\f_d_terminalSmall.png" />
+    <None Include="Resources\f_d_workshopbucher.png" />
+    <None Include="Resources\f_d_workshopbucherSmall.png" />
+    <None Include="Resources\f_d_zeiarch.png" />
+    <None Include="Resources\f_d_zeiarchSmall.png" />
+    <None Include="Resources\f_d_zeitschriften.png" />
+    <None Include="Resources\f_d_zeitschriftenSmall.png" />
+    <None Include="Resources\f_d_zeitungen.png" />
+    <None Include="Resources\f_d_zeitungenSmall.png" />
+    <None Include="Resources\f_f_allgemeines.png" />
+    <None Include="Resources\f_f_allgemeinesSmall.png" />
+    <None Include="Resources\f_f_betriebs.png" />
+    <None Include="Resources\f_f_betriebsSmall.png" />
+    <None Include="Resources\f_f_chemie.png" />
+    <None Include="Resources\f_f_chemieSmall.png" />
+    <None Include="Resources\f_f_elektrotecknik.png" />
+    <None Include="Resources\f_f_elektrotecknikSmall.png" />
+    <None Include="Resources\f_f_informatik.png" />
+    <None Include="Resources\f_f_informatikSmall.png" />
+    <None Include="Resources\f_f_maschinenbau.png" />
+    <None Include="Resources\f_f_maschinenbauSmall.png" />
+    <None Include="Resources\f_f_mathematik.png" />
+    <None Include="Resources\f_f_mathematikSmall.png" />
+    <None Include="Resources\f_f_medien.png" />
+    <None Include="Resources\f_f_medienSmall.png" />
+    <None Include="Resources\f_f_medizin.png" />
+    <None Include="Resources\f_f_medizinSmall.png" />
+    <None Include="Resources\f_f_messtechnik.png" />
+    <None Include="Resources\f_f_messtechnikSmall.png" />
+    <None Include="Resources\f_f_physik.png" />
+    <None Include="Resources\f_f_physikSmall.png" />
+    <None Include="Resources\f_f_psychologie.png" />
+    <None Include="Resources\f_f_psychologieSmall.png" />
+    <None Include="Resources\f_f_regelungs.png" />
+    <None Include="Resources\f_f_regelungsSmall.png" />
+    <None Include="Resources\f_f_soziologie.png" />
+    <None Include="Resources\f_f_soziologieSmall.png" />
+    <None Include="Resources\f_f_technik.png" />
+    <None Include="Resources\f_f_technikSmall.png" />
+    <None Include="Resources\f_f_umwelt.png" />
+    <None Include="Resources\f_f_umweltSmall.png" />
+    <None Include="Resources\f_f_volkswirtschaftslehre.png" />
+    <None Include="Resources\f_f_volkswirtschaftslehreSmall.png" />
+    <None Include="Resources\f_f_werkstoffe.png" />
+    <None Include="Resources\f_f_werkstoffeSmall.png" />
+    <None Include="Resources\Fachgebiete.png" />
+    <None Include="Resources\FachgebieteActive.png" />
+    <None Include="Resources\FachgebieteActiveClick.png" />
+    <None Include="Resources\FachgebieteClick.png" />
+    <None Include="Resources\fivi.gif" />
+    <None Include="Resources\fk.gif" />
+    <None Include="Resources\fl_fm_fq_fu.gif" />
+    <None Include="Resources\g.gif" />
+    <None Include="Resources\ga_gb_ge_gl_gx_ha_he_hl_hn.gif" />
+    <None Include="Resources\gap.gif" />
+    <None Include="Resources\gard.gif" />
+    <None Include="Resources\h.gif" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\HomeActive.png" />
+    <None Include="Resources\HomeActiveClick.png" />
+    <None Include="Resources\HomeClick.png" />
+    <None Include="Resources\hs_hx.gif" />
+    <None Include="Resources\i.gif" />
+    <None Include="Resources\ia.gif" />
+    <None Include="Resources\ib.gif" />
+    <None Include="Resources\ic.gif" />
+    <None Include="Resources\id.gif" />
+    <None Include="Resources\il_io_ip_iq.gif" />
+    <None Include="Resources\ir.gif" />
+    <None Include="Resources\is.gif" />
+    <None Include="Resources\isfile.gif" />
+    <None Include="Resources\it_iw_ix.gif" />
+    <None Include="Resources\kat.gif" />
+    <None Include="Resources\m.gif" />
+    <None Include="Resources\ma.gif" />
+    <None Include="Resources\mb_mc.gif" />
+    <None Include="Resources\md_me_mg.gif" />
+    <None Include="Resources\ml.gif" />
+    <None Include="Resources\mn.gif" />
+    <None Include="Resources\mt.gif" />
+    <None Include="Resources\mw.gif" />
+    <None Include="Resources\my.gif" />
+    <None Include="Resources\n.gif" />
+    <None Include="Resources\nd_ne_ng_nk.gif" />
+    <None Include="Resources\neumed.gif" />
+    <None Include="Resources\nm.gif" />
+    <None Include="Resources\np_nt_nw_nx.gif" />
+    <None Include="Resources\ohrst.gif" />
+    <None Include="Resources\OPAC.png" />
+    <None Include="Resources\OPACActive.png" />
+    <None Include="Resources\OPACActiveClick.png" />
+    <None Include="Resources\OPACClick.png" />
+    <None Include="Resources\p.gif" />
+    <None Include="Resources\pa.gif" />
+    <None Include="Resources\pe_ph_pk.gif" />
+    <None Include="Resources\pl_pm.gif" />
+    <None Include="Resources\po_ps_pv_pw.gif" />
+    <None Include="Resources\Posterbar_closed.jpg" />
+    <None Include="Resources\prae.gif" />
+    <None Include="Resources\print.txt" />
+    <None Include="Resources\ra_rl_rs_sn_sx.gif" />
+    <None Include="Resources\rs.gif" />
+    <None Include="Resources\sca.gif" />
+    <None Include="Resources\schli.gif" />
+    <None Include="Resources\schneid.gif" />
+    <None Include="Resources\selb.gif" />
+    <None Include="Resources\Signaturen.png" />
+    <None Include="Resources\SignaturenActive.png" />
+    <None Include="Resources\SignaturenActiveClick.png" />
+    <None Include="Resources\SignaturenClick.png" />
+    <None Include="Resources\signaturensuchen.png" />
+    <None Include="Resources\signaturensuchenbutton.png" />
+    <None Include="Resources\signaturensuchenbuttonClick.png" />
+    <None Include="Resources\signaturensuchenClick.png" />
+    <None Include="Resources\signaturensuchengreen.png" />
+    <None Include="Resources\t.gif" />
+    <None Include="Resources\ta_te_tg_tu_ua_ue_ul_un_ux.gif" />
+    <None Include="Resources\tagzeionl.gif" />
+    <None Include="Resources\u.gif" />
+    <None Include="Resources\url_error.png" />
+    <None Include="Resources\url_home.png" />
+    <None Include="Resources\url_homeClick.gif" />
+    <None Include="Resources\url_homeGray.png" />
+    <None Include="Resources\url_next.png" />
+    <None Include="Resources\url_nextClick.gif" />
+    <None Include="Resources\url_nextGray.png" />
+    <None Include="Resources\url_prev.png" />
+    <None Include="Resources\url_prevClick.gif" />
+    <None Include="Resources\url_prevGray.png" />
+    <None Include="Resources\url_refresh.png" />
+    <None Include="Resources\url_refreshClick.gif" />
+    <None Include="Resources\url_refreshGray.png" />
+    <None Include="Resources\v.gif" />
+    <None Include="Resources\w.gif" />
+    <None Include="Resources\wa_wk_wp_wx_xa.gif" />
+    <None Include="Resources\wopro.gif" />
+    <None Include="Resources\x.gif" />
+    <None Include="Resources\zeiarch.gif" />
+    <None Include="Resources\zeitungen.gif" />
+    <None Include="Resources\zeizei.gif" />
+    <Content Include="xulrunner\AccessibleMarshal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\breakpadinjector.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\crashreporter.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\D3DCompiler_43.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\freebl3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\gkmedias.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\IA2Marshal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\js.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\libEGL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\libGLESv2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\mozalloc.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\mozglue.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\mozjs.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\msvcp100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nss3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nssckbi.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\nssdbm3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\plugin-container.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\plugin-hang-ui.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\redit.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\softokn3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\updater.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xul.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xulrunner-stub.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xulrunner\xulrunner.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
